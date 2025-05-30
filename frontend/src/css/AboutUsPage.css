@@ -1,0 +1,146 @@
+/* frontend/src/css/AboutUsPage.css */
+.about-us-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.about-us-container h1,
+.about-us-container h2,
+.about-us-container h3 {
+  color: #2c3e50; /* Dark blue-grey */
+  margin-bottom: 1rem;
+}
+
+.about-us-container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #27ae60; /* Green accent */
+  padding-bottom: 0.5rem;
+  display: inline-block; /* For border to fit content */
+}
+/* Center the H1 if it's display: inline-block */
+.about-us-container > div:first-child { /* Assuming H1 is in a div or direct child */
+    text-align: center;
+}
+
+
+.about-section {
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+  text-align: justify; /* Or left */
+}
+
+.about-section ul {
+  list-style: disc; /* Or use custom icons */
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.about-section ul li {
+  margin-bottom: 0.75rem;
+}
+
+.about-us-container h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* Equipment Gallery Section */
+.equipment-gallery-section h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem; /* Reset top margin if it follows h2 closely */
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.equipment-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden; /* To contain image */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+  text-align: center;
+  padding-bottom: 1rem; /* Space for name below image */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.equipment-card img {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Cover the area, might crop */
+  display: block;
+}
+.equipment-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-style: italic;
+}
+
+
+.equipment-card .equipment-name {
+  font-weight: 600;
+  color: #34495e;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  padding: 0 0.5rem;
+}
+
+.equipment-card .equipment-description {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 0.75rem;
+  min-height: 40px; /* Give some space for description or keep it empty */
+}
+
+.loading-about, .error-about {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+.error-about {
+  color: red;
+}
+
+/* Admin Add Equipment Button (if placed on this page) */
+.add-equipment-button-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+.add-equipment-button {
+    background-color: #27ae60; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+.add-equipment-button:hover {
+    background-color: #229954;
+}

@@ -1,0 +1,52 @@
+/* frontend/src/css/ViewComplaintsPage.css */
+.view-complaints-container { /* Renamed from view-feedback-container */
+  max-width: 1100px; margin: 2rem auto; padding: 1rem;
+}
+.view-complaints-container h1 { text-align: center; color: #c0392b; margin-bottom: 2rem; }
+
+.complaint-filters { /* Renamed from feedback-filters */
+  background-color: #fdf2f2; /* Lighter red for filter bg */
+  padding: 1rem; border-radius: 6px; margin-bottom: 2rem;
+  display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
+  border: 1px solid #f8d7da;
+}
+.complaint-filters label { font-weight: 500; margin-right: 0.5rem; }
+.complaint-filters select, .complaint-filters input { padding: 0.5rem; border-radius: 4px; border: 1px solid #ced4da; }
+
+.complaint-list { list-style: none; padding: 0; } /* Renamed */
+.complaint-item { /* Renamed */
+  background-color: #fff; border: 1px solid #e0e0e0;
+  border-left: 5px solid #e74c3c; /* Red accent for complaints */
+  padding: 1.25rem; margin-bottom: 1rem; border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+}
+/* Status-based left borders for complaints */
+.complaint-item.status-new { border-left-color: #f39c12; } /* Orange for new */
+.complaint-item.status-pending-review { border-left-color: #f1c40f; } /* Yellow */
+.complaint-item.status-under-investigation { border-left-color: #3498db; } /* Blue */
+.complaint-item.status-resolved { border-left-color: #2ecc71; } /* Green */
+.complaint-item.status-closed { border-left-color: #95a5a6; } /* Grey */
+.complaint-item.status-rejected { border-left-color: #c0392b; } /* Darker Red */
+
+
+.complaint-item h4 { margin-top: 0; margin-bottom: 0.5rem; color: #34495e; }
+.complaint-item .complaint-meta { /* Renamed */
+  font-size: 0.85rem; color: #7f8c8d; margin-bottom: 0.75rem;
+  display: flex; flex-wrap: wrap; gap: 1rem;
+}
+.complaint-text { /* Renamed */
+  margin-bottom: 1rem; line-height: 1.6; color: #333; white-space: pre-wrap;
+  background-color: #fff9f9; padding: 0.75rem; border: 1px solid #ffe5e5; border-radius: 4px;
+}
+.complaint-admin-section { /* Renamed */
+  margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed #eee;
+}
+/* ... (label, select, textarea, button styles for admin section - similar to ViewFeedbackPage.css) ... */
+ .complaint-admin-section label {font-weight: 600;display: block;margin-bottom: 0.25rem;}
+ .complaint-admin-section select, .complaint-admin-section textarea, .complaint-admin-section input[type="text"] {width: 100%;padding: 0.5rem;border-radius: 4px;border: 1px solid #ccc;margin-bottom: 0.5rem;}
+ .complaint-admin-section textarea {min-height: 60px;resize: vertical;}
+ .complaint-admin-section button {background-color: #c0392b;color: white; /* ... other button styles ... */}
+ .complaint-admin-section button:hover {background-color: #a93226;}
+
+
+.no-complaints-message { text-align: center; font-style: italic; color: #777; padding: 2rem; } /* Renamed */

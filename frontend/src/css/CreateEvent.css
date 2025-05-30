@@ -1,0 +1,116 @@
+.create-event-container {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-event-form label {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.create-event-form input,
+.create-event-form textarea,
+.create-event-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.create-event-form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.create-event-form button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create-event-form button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.status {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+.create-event-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.create-event-container h1,
+.create-event-container h2 {
+  text-align: center;
+}
+
+.create-event-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.create-event-form input,
+.create-event-form textarea,
+.create-event-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #006400;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.success {
+  color: green;
+  font-size: 0.95rem;
+}
+
+.image-preview img {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}

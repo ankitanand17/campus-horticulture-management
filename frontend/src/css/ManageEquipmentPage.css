@@ -1,0 +1,84 @@
+/* frontend/src/css/ManageEquipmentPage.css */
+.manage-equipment-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.manage-equipment-container h1,
+.manage-equipment-container h2,
+.manage-equipment-container h3 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+.manage-equipment-container h3 {
+    text-align: left;
+    margin-top: 2.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.equipment-form-section {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  border: 1px solid #e0e0e0;
+}
+
+.equipment-form div { margin-bottom: 1rem; }
+.equipment-form label { display: block; font-weight: 600; margin-bottom: 0.3rem; }
+.equipment-form input[type="text"],
+.equipment-form textarea,
+.equipment-form input[type="file"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.equipment-form textarea { min-height: 80px; resize: vertical; }
+.equipment-form .image-preview-form img { max-width: 150px; max-height: 150px; margin-top: 10px; border-radius: 4px; }
+.equipment-form .image-preview-form button { font-size: 0.8em; margin-left: 10px; cursor: pointer; }
+.equipment-form .form-actions { display: flex; gap: 1rem; justify-content: flex-start; margin-top:1.5rem;}
+.equipment-form .form-actions button { /* Basic button style */
+    padding: 10px 15px; border:none; border-radius:4px; cursor:pointer; font-weight:500;
+}
+.equipment-form .form-actions button[type="submit"] { background-color: #28a745; color:white; }
+.equipment-form .form-actions button[type="button"] { background-color: #6c757d; color:white; }
+
+
+.existing-equipment-section { margin-top: 2rem; }
+.equipment-manage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.equipment-manage-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.equipment-manage-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+.equipment-manage-card h4 { margin: 0.5rem 0; color: #333; }
+.equipment-manage-card p { font-size: 0.9em; color: #666; margin-bottom: 1rem; min-height: 3em;}
+.equipment-card-actions { display: flex; justify-content: space-around; margin-top:auto; }
+.equipment-card-actions .edit-btn, .equipment-card-actions .delete-btn {
+    padding: 6px 12px; font-size:0.9em; border-radius:4px; border:none; cursor:pointer;
+}
+.equipment-card-actions .edit-btn { background-color: #ffc107; color: #212529;}
+.equipment-card-actions .delete-btn { background-color: #dc3545; color: white;}
+
+.server-message.error { color: #721c24; background-color: #f8d7da; /* ... */ }
+.server-message.success { color: #155724; background-color: #d4edda; /* ... */ }
+.error { color: red; font-size: 0.8em; margin-top: 2px; }
+.loading-manage { text-align: center; padding: 2rem; font-size: 1.2em; }

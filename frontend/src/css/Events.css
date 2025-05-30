@@ -1,0 +1,107 @@
+.events-page-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.events-page-container h1, .events-page-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.events-section {
+  margin-bottom: 3rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.event-card-placeholder-image {
+  width: 100%;
+  height: 180px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-style: italic;
+}
+
+.event-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-card-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #2c3e50;
+}
+
+.event-card-content p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+  display: flex; /* For aligning icon and text */
+  align-items: center; /* For aligning icon and text */
+}
+ .event-card-content p svg { /* Basic styling for inline SVG icons */
+   margin-right: 6px;
+   font-size: 1em; /* Or adjust as needed */
+   color: #007bff;
+ }
+
+.no-events-message {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 2rem;
+}
+
+.create-event-link-container {
+ text-align: center;
+ margin-bottom: 2rem;
+}
+.create-event-button {
+ background-color: #28a745;
+ color: white;
+ padding: 10px 20px;
+ text-decoration: none;
+ border-radius: 5px;
+ font-weight: bold;
+ transition: background-color 0.3s;
+}
+.create-event-button:hover {
+ background-color: #218838;
+}

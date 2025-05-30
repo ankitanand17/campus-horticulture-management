@@ -1,0 +1,192 @@
+/* frontend/src/css/ViewFeedbackPage.css */
+.view-feedback-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.view-feedback-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.feedback-filters {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap; /* Allow filters to wrap on smaller screens */
+  border: 1px solid #e9ecef;
+}
+.feedback-filters label {
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+.feedback-filters select, .feedback-filters input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.feedback-list {
+  list-style: none;
+  padding: 0;
+}
+.feedback-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-left: 5px solid #3498db; /* Blue accent for feedback */
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+}
+.feedback-item.status-new { border-left-color: #f1c40f; /* Yellow for new */ }
+.feedback-item.status-reviewed { border-left-color: #3498db; /* Blue for reviewed */ }
+.feedback-item.status-in_progress { border-left-color: #e67e22; /* Orange for in_progress */ }
+.feedback-item.status-resolved { border-left-color: #2ecc71; /* Green for resolved */ }
+.feedback-item.status-archived { border-left-color: #95a5a6; /* Grey for archived */ }
+
+
+.feedback-item h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+.feedback-item .feedback-meta {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.feedback-item .feedback-meta span {
+  margin-right: 1rem; /* Legacy, use gap instead */
+}
+.feedback-text {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap; /* Preserve formatting */
+  background-color: #fdfdfd;
+  padding: 0.75rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+.feedback-admin-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #eee;
+}
+.feedback-admin-section label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.feedback-admin-section select, .feedback-admin-section textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+.feedback-admin-section textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+.feedback-admin-section button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.feedback-admin-section button:hover {
+  background-color: #2980b9;
+}
+.no-feedback-message {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  padding: 2rem;
+}
+
+.feedback-history-section h3 {
+    margin-bottom: 1rem;
+}
+
+.student-feedback-list {
+    list-style: none;
+    padding: 0;
+}
+
+.student-feedback-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+/* Status-based left border (optional, similar to admin view) */
+.student-feedback-item.status-new { border-left: 4px solid #f1c40f; }
+.student-feedback-item.status-reviewed { border-left: 4px solid #3498db; }
+.student-feedback-item.status-in-progress { border-left: 4px solid #e67e22; }
+.student-feedback-item.status-resolved { border-left: 4px solid #2ecc71; }
+.student-feedback-item.status-archived { border-left: 4px solid #95a5a6; }
+
+
+.feedback-item-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    color: #777;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dotted #eee;
+}
+.feedback-status {
+    font-weight: bold;
+}
+
+.student-feedback-item p {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+}
+.student-feedback-item .feedback-item-text {
+    color: #333;
+    margin-top: 0.5rem;
+}
+.student-feedback-item strong {
+    color: #2c3e50;
+}
+
+.feedback-admin-reply {
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    background-color: #e8f4fd; /* Light blue for admin reply */
+    border-left: 3px solid #3498db;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+.feedback-admin-reply strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #2980b9;
+}
+.feedback-admin-reply p {
+    margin: 0;
+    color: #444;
+}
+.feedback-admin-reply small {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8em;
+    color: #777;
+}

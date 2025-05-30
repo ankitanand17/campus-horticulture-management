@@ -1,0 +1,186 @@
+/* frontend/src/css/EventDetail.css */
+.event-detail-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+}
+
+.event-detail-container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-detail-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.event-detail-placeholder-image {
+  width: 100%;
+  height: 250px;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-style: italic;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.event-info p {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.event-info p strong {
+  color: #1a5276;
+}
+
+.event-admin-actions {
+  margin-top: 25px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.event-admin-actions button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 8px;
+}
+
+.event-edit-button {
+  background-color: #ffc107; /* Amber */
+  color: #212529;
+}
+.event-edit-button:hover {
+  background-color: #e0a800;
+}
+
+.event-delete-button {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+.event-delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Edit Form Styling (similar to CreateEvent or PlantDetail) */
+.event-edit-form {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px dashed #ccc;
+}
+
+.event-edit-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-edit-form div {
+  margin-bottom: 15px;
+}
+
+.event-edit-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.event-edit-form input[type="text"],
+.event-edit-form input[type="date"],
+.event-edit-form input[type="time"],
+.event-edit-form textarea,
+.event-edit-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.event-edit-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.event-edit-form input[type="file"] {
+  padding: 8px;
+}
+
+.event-edit-form .image-preview-edit img {
+  max-width: 150px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.event-edit-form .form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.event-edit-form .form-actions button {
+  padding: 12px 25px;
+}
+
+.update-event-button {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+.update-event-button:hover {
+  background-color: #218838;
+}
+
+.cancel-edit-button {
+  background-color: #6c757d; /* Gray */
+  color: white;
+}
+.cancel-edit-button:hover {
+  background-color: #5a6268;
+}
+
+.error-message-detail {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.join-event-button {
+  background-color: #007bff; /* Blue */
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-event-button:hover {
+  background-color: #0056b3;
+}
+
+.join-event-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

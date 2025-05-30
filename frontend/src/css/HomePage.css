@@ -1,0 +1,282 @@
+/* frontend/src/css/HomePage.css */
+
+.home-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+.section-padding-light {
+  padding: 60px 0;
+  background-color: #f9f9f9; /* Light background for alternating sections */
+}
+
+
+/* --- Hero Section --- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Adjust height as needed, or use min-height */
+  min-height: 400px;
+  max-height: 600px;
+  overflow: hidden; /* Ensure overlay stays within bounds */
+  background-color: #333; /* Fallback color */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the area, might crop */
+  object-position: center; /* Center the image */
+  display: block;
+}
+
+.hero-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hero-text-overlay h1 {
+  font-size: 3rem; /* Adjust as needed */
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  line-height: 1.2;
+}
+
+.hero-text-overlay .hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+
+/* --- Intro Section --- */
+.intro-section h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+.intro-section h2::after { /* Underline effect */
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #27ae60; /* Green accent */
+}
+
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  text-align: justify; /* Or left */
+  max-width: 800px; /* Center the text block */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* --- Features Section --- */
+.features-section h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+.features-section h2::after { /* Underline effect */
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #27ae60;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.feature-icon { /* For react-icons if you use them */
+  color: #27ae60; /* Green accent */
+  margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 0.75rem;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.feature-link {
+    display: inline-block;
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+.feature-link:hover {
+    border-bottom-color: #27ae60;
+}
+
+
+/* --- Footer Section --- */
+.footer-section {
+  background-color: #2c3e50; /* Dark background for footer */
+  color: #ecf0f1; /* Light text color */
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem; /* More gap for footer columns */
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+  border-bottom: 2px solid #3498db; /* Accent color for heading underline */
+  padding-bottom: 0.5rem;
+  display: inline-block; /* To make border only as wide as text */
+}
+
+.footer-logo {
+  max-width: 100px; /* Adjust size as needed */
+  margin-bottom: 1rem;
+  background-color: #fff; /* If logo is transparent and needs bg */
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.footer-column p,
+.footer-column ul li {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  color: #bdc3c7; /* Lighter grey for text */
+}
+
+.footer-column a {
+  color: #3498db; /* Accent color for links */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #5dade2; /* Lighter blue on hover */
+  text-decoration: underline;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-column ul li {
+    display: flex; /* For aligning icons with text */
+    align-items: center;
+    gap: 8px;
+}
+.footer-column ul li svg { /* For react-icons */
+    color: #3498db;
+}
+
+
+.social-icons a {
+  margin-right: 10px;
+  color: #ecf0f1;
+  transition: color 0.2s ease;
+}
+.social-icons a:hover {
+  color: #3498db;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #34495e; /* Separator line */
+  font-size: 0.9rem;
+  color: #95a5a6; /* Even lighter grey for copyright */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-text-overlay h1 {
+    font-size: 2.2rem;
+  }
+  .hero-text-overlay .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  .intro-section h2, .features-section h2 {
+    font-size: 1.8rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    text-align: center;
+  }
+  .footer-column h3 {
+      display: block;
+      border-bottom-width: 0; /* Remove underline on small screens or adjust */
+  }
+  .footer-column ul li {
+      justify-content: center;
+  }
+  .footer-logo {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}

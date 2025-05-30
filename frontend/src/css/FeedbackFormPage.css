@@ -1,0 +1,96 @@
+/* frontend/src/css/FeedbackFormPage.css */
+.feedback-form-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.feedback-form-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.feedback-form div { /* Targets direct div children for field groups */
+  margin-bottom: 1.25rem;
+}
+
+.feedback-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+.feedback-form textarea,
+.feedback-form select,
+.feedback-form input[type="number"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.feedback-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.feedback-form select {
+  appearance: none; /* For custom arrow later if needed */
+  background-color: #fff; /* Ensure select bg is white */
+}
+
+
+.feedback-form .form-actions {
+  text-align: center; /* Center the button */
+  margin-top: 2rem;
+}
+
+.feedback-form button[type="submit"] {
+  background-color: #28a745; /* Green */
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.feedback-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+.feedback-form button[type="submit"]:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.error { /* For Formik ErrorMessage */
+  color: #e74c3c;
+  font-size: 0.85em;
+  margin-top: 0.25rem;
+}
+
+.server-message { /* For success/error messages from server */
+     text-align: center;
+     padding: 0.75rem;
+     margin-top: 1rem;
+     border-radius: 4px;
+     font-weight: 500;
+ }
+ .server-message.success {
+     color: #155724;
+     background-color: #d4edda;
+     border: 1px solid #c3e6cb;
+ }
+ .server-message.error {
+     color: #721c24;
+     background-color: #f8d7da;
+     border: 1px solid #f5c6cb;
+ }

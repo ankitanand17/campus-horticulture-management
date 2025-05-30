@@ -1,0 +1,91 @@
+/* frontend/src/css/CommitteePage.css */
+.committee-page-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.committee-page-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.committee-member-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-decoration: none; /* For the Link component */
+  color: inherit;
+}
+
+.committee-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.committee-member-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem auto;
+  border: 3px solid #3498db; /* Accent color */
+}
+ .committee-member-photo-placeholder {
+     width: 130px;
+     height: 130px;
+     border-radius: 50%;
+     background-color: #ecf0f1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 1rem auto;
+     border: 3px solid #bdc3c7;
+     color: #7f8c8d;
+     font-size: 0.9em;
+ }
+
+
+.committee-member-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.4rem;
+  color: #34495e;
+}
+
+.committee-member-card .member-title {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.committee-member-card .member-contact p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.3rem 0;
+  word-break: break-all; /* For long emails/links */
+}
+ .committee-member-card .member-contact p strong {
+     color: #2c3e50;
+ }
+
+.loading-committee, .error-committee {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+.error-committee {
+  color: red;
+}

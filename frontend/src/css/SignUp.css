@@ -1,0 +1,104 @@
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #218838;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin-top: -5px;
+  }
+  
+  .selected-role {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+.login-link a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* In SignUp.css or a shared form CSS file */
+.form-status-error {
+  color: #c0392b; /* Red for errors */
+  background-color: #fdecea; /* Light red background */
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.server-message { /* For general success/error messages outside Formik */
+    text-align: center;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.server-message.success {
+    color: #155724; /* Dark Green */
+    background-color: #d4edda; /* Light Green */
+    border: 1px solid #c3e6cb;
+}
+.server-message.error { /* Also used for non-Formik errors */
+    color: #721c24; /* Dark Red */
+    background-color: #f8d7da; /* Light Red */
+    border: 1px solid #f5c6cb;
+}
